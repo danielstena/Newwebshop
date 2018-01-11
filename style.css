@@ -1,0 +1,187 @@
+
+body{
+    max-width: 1280px;
+    margin:0px;
+    padding:0px;
+    background-image: url(bilder/sky.jpg);
+    background-repeat: repeat;
+}
+.container{
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw ;
+    grid-template-rows: 20vh 5vh 5vh auto 10vh 5vh;
+    grid-template-areas: 
+    "header header header"
+    ". meny ."
+    ". undermeny ."
+    ". main ."
+    ". footer1 ."
+    ". footer2 ."
+    ;
+}
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgba(85, 83, 83, 0.479);
+    margin-top:1.5vh;
+    margin-bottom:1.5vh;
+    margin-right:3.5vh;
+    margin-left:1.5vh;
+}
+.headerlogo{
+    width:60%;
+    font-size: 5vw;
+    padding-top:2vh;
+    padding-left:4vh;
+    font-family: 'Rozha One', serif;
+    color:white;
+}
+.headerlogin{
+    width:30%;
+    padding-top:5vh;
+    padding-left:10vh;
+}
+#login{
+    margin-top:5vh;
+    margin-left:10vw;
+}
+#psrnm, #pswrd{
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+.meny{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-area: meny;
+}
+.menybutton {
+    width: 8.5vw;
+    height: 3.5vh;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(90, 92, 90);
+    border: 2px solid rgb(115, 116, 115);
+    font-size: 1.8vh;
+  }  
+
+.menybutton:hover {background-color: blue;}
+  
+.menybutton:active {
+    background-color: #433e8e;
+    box-shadow: 3 1px #666;
+    transform: translateY(4px);
+}
+.undermeny{
+    display: flex;
+    justify-content: space-around;
+    grid-area: undermeny;
+}
+.undermenybutton {
+    width: 13vw;
+    height: 3.5vh;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(153, 155, 153);
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 50px;
+    font-size: 1.7vh;
+}  
+.undermenybutton:hover {background-color: blue;}
+  
+.undermenybutton:active {
+    background-color: #433e8e;
+    box-shadow: 3 1px #666;
+    transform: translateY(4px);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border:1px solid black;
+    background-color:rgba(85, 83, 83, 0.479);
+    grid-area: main;
+    text-align: center;
+    font-size: 50px;
+    color:white;
+    min-height: 60vh;
+}
+.card{
+    border:1px solid black;
+    height:70vh;
+    width: 35%;
+    margin-bottom: 3vh;
+    margin-top:5vh;
+    background-color: rgba(202, 199, 199, 0.589)
+}
+.cardimage{
+    margin-top:0.5vh;
+}
+.prodbild{
+    width: 17vw;
+    height:25vh;
+}
+.cardinfo{
+    font-size: 30px;
+    height:40%;
+    margin:0px;
+    padding:0px;
+}
+.cardpris{
+    color:red;
+    font-size: 3vh;
+    margin:0px;
+}
+.buy{
+    width:10vw;
+    height:4vh;
+}
+.footer1{
+    grid-area: footer1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border:1px solid black;
+    background-color:rgba(85, 83, 83, 0.479);
+}
+.footer1left, .footer1middle, .footer1right{
+    text-align: center;
+    width:30%;
+}
+.betalning{
+    width:100%;
+    height:auto;
+}
+.footer2{
+    grid-area: footer2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border:1px solid black;
+    background-color:rgba(85, 83, 83, 0.479);
+}
+
+@media only screen and (max-width: 1000px) {
+    .headerlogo{
+        font-size: 3vh;
+        color:pink;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .headerlogo{
+        font-size: 3vh;
+        color:blue;
+    }       
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "kategoriname": "Protein",
+        "link": "protein.html"
+    },{
+        "id": 2,
+        "kategoriname": "Kreatin",
+        "link": "kreatin.html"
+    },{
+        "id": 3,
+        "kategoriname": "Pwo",
+        "link": "pwo.html"
+    },{
+        "id": 4,
+        "kategoriname": "Gainer",
+        "link": "gainer.html"
+    }
+]
