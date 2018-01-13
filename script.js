@@ -4,6 +4,7 @@ var huvudkategorier;
 var cartList = [];
 var ourUser = "test";
 var ourPassword = "test";
+var totalPrice = [];
 
 $(document).ready(function(){
    loadData();
@@ -53,18 +54,16 @@ function visaKontakt() {
     $(".undermeny").empty();
 
 }
-
 addToBasket = function(val) {
-    $(".headerproductscountdiv").html("")
-    console.log(cartList.length+1)
-    $(".headerproductscountdiv").append(cartList.length)
-
 
     //Vilket nummer har vi klickat på
     cartList.push(val);
 
-    //spara vår nya array i sessionstorage
+    //spara vår nya array i localstorage
     localStorage.cartList = JSON.stringify(cartList);
+    $(".headerproductscountdiv").html("")
+    $(".headerproductscountdiv").append("<a href='#' id='summeringsLink' onclick='visaCart()'>Produkter i varukorgen: "+cartList.length+"</a>")
+    
 }
 
 function inloggad(){
@@ -81,15 +80,15 @@ function visaStart(){
 }
 //VARUKORGEN
 function visaCart() {
-    $(".undermeny").empty();
-    
+
     var html = '<h1 class="carth1">Kundvagn</h1>';
-    html += "<div class='summeringsdiv'>";
-    html += "<p>Här ska summeringen stå</p>";
-    html += "</div'>";
     html += "<div class='cartDiv'>";
+    html += "<div class='cartSummeringAntal'></div>";
+    html += "<div class='cartSummeringTotalPris'></div>";
     html += '<button class="clearlist">Töm kundvagn</button>';
     html += "<div class='cartCardsDiv'>";
+    
+    $(".undermeny").empty();
     
     for(var i = 0; i < cartList.length; i++) {
         for(var k = 0; k < produkter.length; k++){
@@ -107,7 +106,8 @@ function visaCart() {
                 html += "<div class='cardprisDiv'>";
                 html += "<h2 class='cartCardpris'>"+produkter[k].prodPrice+" kr</h2>";
                 html += "</div>";
-                
+                totalPrice.push(produkter[k].prodPrice);
+
                 html += "<div class='cartCardinfo'>";
                 html += "<p class='cardinfo'>"+produkter[k].prodDesc+"</p>";
                 html += "</div>";
@@ -120,6 +120,9 @@ function visaCart() {
     html += '</div>';
     html += '</div>';
      $(".main").html(html);
+     $(".cartSummeringAntal").append("<p>Antal produkter i varukorgen: " + cartList.length + "</p>");
+     //$(".cartSummeringTotalPris").append("<p>Antal produkter i varukorgen: " + cartList.length + "</p>");
+     
 }
 
 //Huvudmeny början
@@ -166,7 +169,7 @@ function visaProdukter(underID){
             html += "</div>";
         }
     }
-    
+    console.log(totalPrice);
     $(".main").append(html);
  }
 

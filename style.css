@@ -51,6 +51,15 @@ body{
     margin-top:1vh;
     margin-bottom:1vh;
 }
+.headerproductscountdiv{
+    margin-top:40px;
+}
+#summeringsLink{
+    text-decoration: none;
+    color:white;
+    margin-top:20px;
+    font-size: 20px;
+}
 .meny{
     display: flex;
     justify-content: space-around;
@@ -177,11 +186,16 @@ body{
 /* produktkortscss slut */
 
 /* kundvagns korts css start */
+.cartSummeringAntal{
+    font-size: 20px;
+    border:1px solid white;
+}
+.cartSummeringTotalPris{
+    font-size: 30px;
+}
 .carth1{
     margin:0px;
-}
-.summeringsdiv{
-    font-size: 20px;
+    border:1px solid white;
 }
 .cartCardsDiv{
     display: flex;
@@ -189,12 +203,15 @@ body{
     flex-wrap: wrap;
     width:100%;
     justify-content: space-around;
+    border:1px solid white;
 }
 .clearlist{
     width:200px;
     height:30px;
     font-size: 15px;
+    
 }
+/* Kortet i carten */
 .cartCardDiv{
     border:2px solid black;
     height:30vh;
@@ -205,6 +222,7 @@ body{
     /* background-color: rgba(202, 199, 199, 0.842); */
     overflow: auto;
     color: rgb(59, 59, 59);
+
 }
 .cartCardProdname{
     margin:0px;
