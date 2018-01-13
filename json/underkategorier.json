@@ -34,30 +34,18 @@
         "huvudkategori": 1
     },{
         "id": 11,
-        "kategoriNamn": "Mutant",
-        "huvudkategori": 3
+        "kategoriNamn": "MuscleTech",
+        "huvudkategori": 2
     },{
         "id": 12,
         "kategoriNamn": "MuscleTech",
-        "huvudkategori": 2
+        "huvudkategori": 4
+    },{
+        "id": 13,
+        "kategoriNamn": "Mutant",
+        "huvudkategori": 4
     },{
         "id": 14,
-        "kategoriNamn": "Swedish Supplements",
-        "huvudkategori": 1
-    },{
-        "id": 15,
-        "kategoriNamn": "Star Nutrition",
-        "huvudkategori": 2
-    },{
-        "id": 15,
-        "kategoriNamn": "MuscleTech",
-        "huvudkategori": 4
-    },{
-        "id": 15,
-        "kategoriNamn": "Swedish Supplements",
-        "huvudkategori": 4
-    },{
-        "id": 15,
         "kategoriNamn": "Star Nutrition",
         "huvudkategori": 4
     }

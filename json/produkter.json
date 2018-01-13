@@ -1,293 +1,389 @@
 [
     {
         "id": 1,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Protein med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Whey 100 - Jordgubb",
+        "prodDesc": "Star Nutrition Whey-100 är ett kompromisslöst kvalitetsprotein tillverkat för dig som kräver det bästa. För maximal muskeluppbyggnad och fettförbränning!",
+        "prodPrice": 189,
+        "prodBild": "bilder/starProtJordgubb.png",
         "huvudKat": 1,
         "underKat": 1
         
     },{
         "id": 2,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Whey 100 - Chocolate Peanut butter",
+        "prodDesc": "Star Nutrition Whey-100 är ett kompromisslöst kvalitetsprotein tillverkat för dig som kräver det bästa. För maximal muskeluppbyggnad och fettförbränning!",
+        "prodPrice": 189,
+        "prodBild": "bilder/starProtchpbutter.png",
         "huvudKat": 1,
         "underKat": 1
 
     },{
         "id": 3,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Whey 100 - Cookies & Cream",
+        "prodDesc": "Star Nutrition Whey-100 är ett kompromisslöst kvalitetsprotein tillverkat för dig som kräver det bästa. För maximal muskeluppbyggnad och fettförbränning!",
+        "prodPrice": 189,
+        "prodBild": "bilder/starProtc&c.png",
         "huvudKat": 1,
         "underKat": 1
     },{
         "id": 4,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Whey 100 - Chocolate peanut butter",
+        "prodDesc": "Star Nutrition Whey-100 är ett kompromisslöst kvalitetsprotein tillverkat för dig som kräver det bästa. För maximal muskeluppbyggnad och fettförbränning!",
+        "prodPrice": 189,
+        "prodBild": "bilder/starProtNchocolatepea.png",
         "huvudKat": 1,
         "underKat": 1
     },{
         "id": 5,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Whey Hardcore,Chocolate 2,27kg ",
+        "prodDesc": "Whey Hardcore - Högkvalitativt vassleproteinpulver med enastående smak från Chained Nutrition. Ger upp till 40 gram protein per portion!",
+        "prodPrice": 379,
+        "prodBild": "bilder/chainedprothardcore.jpg",
         "huvudKat": 1,
         "underKat": 3
     },{
         "id": 6,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Beef Protein Hardcore,Chocolate 900 g",
+        "prodDesc": "Chained Nutritions Beef Protein Hardcore är ett hydrolyserat biffprotein med mycket fyllighet och krämighet. Finns i två fantastiska smaker!",
+        "prodPrice": 229,
+        "prodBild": "bilder/beef-protein-900-g-chained-nutrition_1.jpg",
         "huvudKat": 1,
         "underKat": 3
     },{
         "id": 7,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Whey Hardcore,Vanilla 2,27kg",
+        "prodDesc": "Whey Hardcore - Högkvalitativt vassleproteinpulver med enastående smak från Chained Nutrition. Ger upp till 40 gram protein per portion!",
+        "prodPrice": 379,
+        "prodBild": "bilder/chainedprothardcore.jpg",
         "huvudKat": 1,
         "underKat": 3
     },{
         "id": 8,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Beef Protein Hardcore,Vanilla 900 g",
+        "prodDesc": "Chained Nutritions Beef Protein Hardcore är ett hydrolyserat biffprotein med mycket fyllighet och krämighet. Finns i två fantastiska smaker!",
+        "prodPrice": 229,
+        "prodBild": "bilder/beef-protein-900-g-chained-nutrition_1.jpg",
         "huvudKat": 1,
         "underKat": 3
     },{
         "id": 9,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Complete Protein 3, Jordgubb 900 g",
+        "prodDesc": "Complete Protein 3 är ett resultat av svensk forskning. Instantiserat för extra lättlöslighet samt har mycket hög proteinhalt och nästan obefintligt med fett & laktos.",
+        "prodPrice": 320,
+        "prodBild": "bilder/fairingprotjordgubb.png",
         "huvudKat": 1,
         "underKat": 10
     },{
         "id": 10,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Complete Protein 3, Chocolate Tofee 900 g",
+        "prodDesc": "Complete Protein 3 är ett resultat av svensk forskning. Instantiserat för extra lättlöslighet samt har mycket hög proteinhalt och nästan obefintligt med fett & laktos.",
+        "prodPrice": 320,
+        "prodBild": "bilder/fairingprochocotoffe.png",
         "huvudKat": 1,
         "underKat": 10
     },{
         "id": 11,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Sloow Protein, 1000 g strawberry",
+        "prodDesc": "Sloow Protein är ett högvärdigt kaseinprotein från det pålitliga varumärket Fairing som alltid levererar kvalitet! ",
+        "prodPrice": 279,
+        "prodBild": "bilder/Fairingprodslowjordgubb.png",
         "huvudKat": 1,
         "underKat": 10
     },{
         "id": 12,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Sloow Protein, 1000 g strawberry",
+        "prodDesc": "Sloow Protein är ett högvärdigt kaseinprotein från det pålitliga varumärket Fairing som alltid levererar kvalitet! ",
+        "prodPrice": 279,
+        "prodBild": "bilder/fairingprotstrawbliq.png",
         "huvudKat": 1,
         "underKat": 10
     },{
         "id": 13,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 1,
-        "underKat": 14
+        "prodName": "CreaKong, 300g",
+        "prodDesc": "Creakong från Mutant är en unik produkt som innehåller tre olika kreatinformer för maximalt upptag och effekt! Höjer prestationsförmågan och ökar muskelvolymen!",
+        "prodPrice": 189,
+        "prodBild": "bilder/3389-40-creakong.jpg",
+        "huvudKat": 2,
+        "underKat": 2
     },{
         "id": 14,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 1,
-        "underKat": 14
+        "prodName": "Mutant Madness, 50 servings",
+        "prodDesc": "Mutant Madness - Mutants kanske kraftfullaste PWO hittills! Speciellt framtagen för den erfarna atleten som söker efter det lilla extra.",
+        "prodPrice": 349,
+        "prodBild": "bilder/mutant-madness-275-g-mutant_1.png",
+        "huvudKat": 2,
+        "underKat": 2
     },{
         "id": 15,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 1,
-        "underKat": 14
+        "prodName": "Paket med 2 st Mutant Madness, 50 servings,",
+        "prodDesc": "Mutant Madness - Mutants kanske kraftfullaste PWO hittills! Speciellt framtagen för den erfarna atleten som söker efter det lilla extra.",
+        "prodPrice": 599,
+        "prodBild": "bilder/2mutant-madness-275-g-mutant_1.png",
+        "huvudKat": 2,
+        "underKat": 2
     },{
         "id": 16,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 1,
-        "underKat": 14
-    },{
-        "id": 16,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Paket med 4 st Mutant Madness, 50 servings,",
+        "prodDesc": "Mutant Madness - Mutants kanske kraftfullaste PWO hittills! Speciellt framtagen för den erfarna atleten som söker efter det lilla extra.",
+        "prodPrice": 999,
+        "prodBild": "bilder/4-madness-275-g-mutant_1.png",
         "huvudKat": 2,
         "underKat": 2
     },{
         "id": 17,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 2
-    },{
-        "id": 18,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 2
-    },{
-        "id": 19,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 2
-    },{
-        "id": 20,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Kreatin Monohydrat",
+        "prodDesc": "För explosivitet och styrka! Monohydrat är den ursprungliga kreatinformen. Fairings Kreatin är 100% mikroniserat, ultrarent och kristallklart.",
+        "prodPrice": 183,
+        "prodBild": "bilder/fairingkreatin.png",
         "huvudKat": 2,
         "underKat": 8
     },{
-        "id": 21,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "id": 18,
+        "prodName": "1x kreatin monohydrat",
+        "prodDesc": "För explosivitet och styrka! Monohydrat är den ursprungliga kreatinformen. Fairings Kreatin är 100% mikroniserat, ultrarent och kristallklart.",
+        "prodPrice": 199,
+        "prodBild": "bilder/fairingkreatin1.png",
+        "huvudKat": 2,
+        "underKat": 8
+    },{
+        "id": 19,
+        "prodName": "2x star kreatin monohydrat",
+        "prodDesc": "För explosivitet och styrka! Monohydrat är den ursprungliga kreatinformen. Fairings Kreatin är 100% mikroniserat, ultrarent och kristallklart.",
+        "prodPrice": 299,
+        "prodBild": "bilder/fairingkreatin2.png",
+        "huvudKat": 2,
+        "underKat": 8
+    },{
+        "id": 20,
+        "prodName": "3x star kreatin monohydrat",
+        "prodDesc": "För explosivitet och styrka! Monohydrat är den ursprungliga kreatinformen. Fairings Kreatin är 100% mikroniserat, ultrarent och kristallklart.",
+        "prodPrice": 399,
+        "prodBild": "bilder/fairingkreatin3.png",
         "huvudKat": 2,
         "underKat": 8
     },{
         "id": 22,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "100% Platinum Creatine, 400g",
+        "prodDesc": "100% Platinum Creatine - Kreatinmonohydrat från Muscletech av högsta kvalitet! För ökad styrka, massiv explosivitet och förbättrad uthållighet!",
+        "prodPrice": 199,
+        "prodBild": "bilder/muscletechplatinumkreatin.png",
         "huvudKat": 2,
-        "underKat": 8
+        "underKat": 11
     },{
         "id": 23,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Creactor, 203g, unflavored",
+        "prodDesc": "Creactor - Kreatinprodukt från MuscleTech med högsta tänkbara kvalitet. Ökar styrka, explosivitet och muskeltillväxt.",
+        "prodPrice": 399,
+        "prodBild": "bilder/muscletechkreatincreactor.png",
         "huvudKat": 2,
-        "underKat": 8
+        "underKat": 11
     },{
         "id": 24,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Cell-Tech Perf, 1,4kg",
+        "prodDesc": "Nya Cell-Tech Performance Series från Muscletech är en avancerad återhämtningsprodukt med unik formula som ökar muskelvolymen och förbättrar prestationen!",
+        "prodPrice": 244,
+        "prodBild": "bilder/muscletechkreatincelltech.png",
         "huvudKat": 2,
-        "underKat": 12
+        "underKat": 11
     },{
         "id": 25,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "MuscleTech Performance Series - Cell-Tech",
+        "prodDesc": "Innehåller en unik kolhydratsblandning, två sorters kreatin samt protein i form av de grenade aminosyrorna. Den är dessutom även vitamin- och mineralberikad.",
+        "prodPrice": 499,
+        "prodBild": "bilder/muscletechKreatincelltechfruitpunch.jpg",
         "huvudKat": 2,
-        "underKat": 12
+        "underKat": 11
     },{
         "id": 26,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 12
+        "prodName": "Intensity Power, 240 g",
+        "prodDesc": "Gillar du Star Nutritions populära PWO Intensity? Då kommer du älska Intensity Power - kraftfullare, effektivare, intensivare!",
+        "prodPrice": 142,
+        "prodBild": "bilder/starpwokiwi.png",
+        "huvudKat": 3,
+        "underKat": 4
     },{
         "id": 27,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
+        "prodName": "PWO Rush, 218 g",
+        "prodDesc": "PWO Rush - Maximal prestationskick från Star Nutritions Hers som ger maximal effekt och energi utan socker och vattenbindande kreatin!",
         "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 12
+        "prodBild": "bilder/starpworush.png",
+        "huvudKat": 3,
+        "underKat": 4
     },{
         "id": 28,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 15
+        "prodName": "Supreme Pump, 60 caps",
+        "prodDesc": "Star Nutrition Supreme Pump är en nytänkande PWO som ökar pumpen, styrkan och uthålligheten. Innovativa ingredienser möter välavvägda doser!",
+        "prodPrice": 179,
+        "prodBild": "bilder/starpwosupremepump.png",
+        "huvudKat": 3,
+        "underKat": 4
     },{
         "id": 29,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 15
+        "prodName": "Beta-alanine, 320 g",
+        "prodDesc": "Beta-alanine reducerar mjölksyraansamlingar i musklerna under träning och ökar därigenom uthålligheten.",
+        "prodPrice": 139,
+        "prodBild": "bilder/starpwobeta.png",
+        "huvudKat": 3,
+        "underKat": 4
     },{
         "id": 30,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 15
+        "prodName": "Off the Hook, 525 g cola",
+        "prodDesc": "Off The Hook är ett efterlängtat tillskott i Chained Nutritions utbud. Det är en genomtänkt och potent PWO framtagen för erfarna atleter.",
+        "prodPrice": 349,
+        "prodBild": "bilder/chainedpwooffcola.png",
+        "huvudKat": 3,
+        "underKat": 5
     },{
         "id": 31,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
-        "huvudKat": 2,
-        "underKat": 15
+        "prodName": "Off the Hook, 525 g sick citrus",
+        "prodDesc": "Off The Hook är ett efterlängtat tillskott i Chained Nutritions utbud. Det är en genomtänkt och potent PWO framtagen för erfarna atleter.",
+        "prodPrice": 349,
+        "prodBild": "bilder/chainedpwooffcitrus.png",
+        "huvudKat": 3,
+        "underKat": 5
     },{
         "id": 32,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Off the Hook, 525 g sour apple",
+        "prodDesc": "Off The Hook är ett efterlängtat tillskott i Chained Nutritions utbud. Det är en genomtänkt och potent PWO framtagen för erfarna atleter.",
+        "prodPrice": 349,
+        "prodBild": "bilder/chainedpwoofsour.png",
         "huvudKat": 3,
-        "underKat": 4
+        "underKat": 5
     },{
         "id": 33,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Off the Hook, 525 g bloody apple",
+        "prodDesc": "Off The Hook är ett efterlängtat tillskott i Chained Nutritions utbud. Det är en genomtänkt och potent PWO framtagen för erfarna atleter.",
+        "prodPrice": 349,
+        "prodBild": "bilder/chainedpwoofbloodberry.png",
         "huvudKat": 3,
-        "underKat": 4
+        "underKat": 5
     },{
         "id": 34,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Neurocore, 50 servings",
+        "prodDesc": "Neurocore - Omåttligt populär superkoncentrerad PWO som är sammansatt av ett flertal potenta ingredienser för att maximera din potential under träning!",
+        "prodPrice": 179,
+        "prodBild": "bilder/muscletechpwoiceblue.png",
         "huvudKat": 3,
-        "underKat": 4
+        "underKat": 9
     },{
         "id": 35,
-        "prodName": "Epiphone Les Paul Standard",
-        "prodDesc": "Elgitarr med kropp av mahogny och AAA-flammigt lönntopp, mahognyhals med greppbräda av rosewood och två ProBucker pickups.",
-        "prodPrice": 6999,
-        "prodBild": "bilder/stargainer.png",
+        "prodName": "Vapor X5 Next Gen, 30 servings",
+        "prodDesc": "Muscletech Vapor X5 Next Gen för dig som letar efter den mest kompletta, banbrytande PWO’n med ultimat sensorisk upplevelse.",
+        "prodPrice": 399,
+        "prodBild": "bilder/muschletechpwobluerasp.png",
         "huvudKat": 3,
-        "underKat": 4
-    }
+        "underKat": 9
+    },{
+        "id": 36,
+        "prodName": "Anarchy Next Gen, 210 g, Blue Raspberry",
+        "prodDesc": "Anarchy Next Generation består till stor del av de nyckelingredienser som genom studier visat sig vara verkningsfulla för både din prestation under träningspasset och resultaten i form av mer volym och jämnare muskelmassa. En av de mer ovanliga ingredienserna är HydroMax glycerol som är ett ämne som visat sig vara särskilt bra för ge fylliga och vaskulära egenskaper till dina muskler.",
+        "prodPrice": 349,
+        "prodBild": "bilder/muschlepwoanarchy.jpg",
+        "huvudKat": 3,
+        "underKat": 9
+        },{
+        "id": 35,
+        "prodName": "2X Anarchy Next Gen, 210 g, Blue Raspberry",
+        "prodDesc": "Anarchy Next Generation består till stor del av de nyckelingredienser som genom studier visat sig vara verkningsfulla för både din prestation under träningspasset och resultaten i form av mer volym och jämnare muskelmassa. En av de mer ovanliga ingredienserna är HydroMax glycerol som är ett ämne som visat sig vara särskilt bra för ge fylliga och vaskulära egenskaper till dina muskler.",
+        "prodPrice": 599,
+        "prodBild": "bilder/muschlepwoanarchy2st.jpg",
+        "huvudKat": 3,
+        "underKat": 9
+        },{
+        "id": 35,
+        "prodName": "MuscleTech Mass-Tech vanilla",
+        "prodDesc": "Krämig gainer med ultimat viktökningsformula.",
+        "prodPrice": 449,
+        "prodBild": "bilder/musclegainervanilla.jpg",
+        "huvudKat": 4,
+        "underKat": 12
+        },{
+        "id": 35,
+        "prodName": "MuscleTech Mass-Tech strawberry",
+        "prodDesc": "Krämig gainer med ultimat viktökningsformula.",
+        "prodPrice": 449,
+        "prodBild": "bilder/musclegainerstrawberry.jpg",
+        "huvudKat": 4,
+        "underKat": 12
+        },{
+        "id": 35,
+        "prodName": "100% Mass Gainer, 5.5kg chocolate",
+        "prodDesc": "Med sin 100% Mass Gainer erbjuder Muscletech en produkt som förbättrar absorptionen av näringsämnen och påskyndar återhämtningen –Innehåller BCAA för ökad muskeltillväxt!",
+        "prodPrice": 499,
+        "prodBild": "bilder/muscletechgainer5kg.png",
+        "huvudKat": 4,
+        "underKat": 12
+        },{
+        "id": 35,
+        "prodName": "100% Mass Gainer, 5.5kg vanilla",
+        "prodDesc": "Med sin 100% Mass Gainer erbjuder Muscletech en produkt som förbättrar absorptionen av näringsämnen och påskyndar återhämtningen –Innehåller BCAA för ökad muskeltillväxt!",
+        "prodPrice": 6999,
+        "prodBild": "bilder/muscletechgainer5kgvanilla.jpg",
+        "huvudKat": 4,
+        "underKat": 12
+        },{
+        "id": 35,
+        "prodName": "Mutant Mass",
+        "prodDesc": "Mutant Mass från Mutant med den nya förbättrade formulan är gainern för dig som har svårt att gå upp i vikt eller snabbt vill öka i muskelvolym och muskelmassa! ",
+        "prodPrice": 295,
+        "prodBild": "bilder/mutantGainercookiesandcream.png",
+        "huvudKat": 4,
+        "underKat": 13
+        },{
+        "id": 35,
+        "prodName": "Mutant Mass",
+        "prodDesc": "Mutant Mass från Mutant med den nya förbättrade formulan är gainern för dig som har svårt att gå upp i vikt eller snabbt vill öka i muskelvolym och muskelmassa! ",
+        "prodPrice": 295,
+        "prodBild": "bilder/mutantgainertriplechocolate.png",
+        "huvudKat": 4,
+        "underKat": 13
+        },{
+        "id": 35,
+        "prodName": "Mutant Mass",
+        "prodDesc": "Mutant Mass från Mutant med den nya förbättrade formulan är gainern för dig som har svårt att gå upp i vikt eller snabbt vill öka i muskelvolym och muskelmassa! ",
+        "prodPrice": 295,
+        "prodBild": "bilder/mutantgainerchocolatefudgebrow.png",
+        "huvudKat": 4,
+        "underKat": 13
+        },{
+        "id": 35,
+        "prodName": "Mutant Mass",
+        "prodDesc": "Mutant Mass från Mutant med den nya förbättrade formulan är gainern för dig som har svårt att gå upp i vikt eller snabbt vill öka i muskelvolym och muskelmassa! ",
+        "prodPrice": 295,
+        "prodBild": "bilder/mutantgainerstrawbanana.png",
+        "huvudKat": 4,
+        "underKat": 13
+        },{
+        "id": 35,
+        "prodName": "Supreme Mass jordgubb",
+        "prodDesc": "Star Nutritions Supreme Mass är en proteinrik kolhydratmix som ger dig allt du behöver för maximal viktökning, energiinlagring, muskelutveckling och återhämtning!",
+        "prodPrice": 149,
+        "prodBild": "bilder/stargainerjordgubb.png",
+        "huvudKat": 4,
+        "underKat": 14
+        },{
+        "id": 35,
+        "prodName": "Supreme Mass banan",
+        "prodDesc": "Star Nutritions Supreme Mass är en proteinrik kolhydratmix som ger dig allt du behöver för maximal viktökning, energiinlagring, muskelutveckling och återhämtning!",
+        "prodPrice": 149,
+        "prodBild": "bilder/stargainerbanan.png",
+        "huvudKat": 4,
+        "underKat": 14
+        },{
+        "id": 35,
+        "prodName": "Supreme Mass mint choklad",
+        "prodDesc": "Star Nutritions Supreme Mass är en proteinrik kolhydratmix som ger dig allt du behöver för maximal viktökning, energiinlagring, muskelutveckling och återhämtning!",
+        "prodPrice": 149,
+        "prodBild": "bilder/stargainermint.png",
+        "huvudKat": 4,
+        "underKat": 14
+        },{
+        "id": 35,
+        "prodName": "Supreme Mass vanilj",
+        "prodDesc": "Star Nutritions Supreme Mass är en proteinrik kolhydratmix som ger dig allt du behöver för maximal viktökning, energiinlagring, muskelutveckling och återhämtning!",
+        "prodPrice": 149,
+        "prodBild": "bilder/stargainervanilj.png",
+        "huvudKat": 4,
+        "underKat": 14
+        }                                                                                                              
 ]
