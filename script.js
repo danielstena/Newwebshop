@@ -4,7 +4,8 @@ var huvudkategorier;
 var cartList = [];
 var ourUser = "test";
 var ourPassword = "test";
-var totalPrice = [];
+totalProductsInCart = 0
+totalPrice = 0
 
 $(document).ready(function(){
    loadData();
@@ -43,12 +44,13 @@ $(document).ready(function(){
 
 //Slut på document ready!!
 
-function visaInfo() {
+function visaOmOss() {
     $(".main").empty();
     $(".undermeny").empty();
-    var html = '<h1>Oss finner du här</h1>';
+    var html = '<br><h1>Oss finner du här</h1><br>';
     html += "<div class='kartDiv' width:500px; >";
     html += '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.0483140255587!2d12.05361045095419!3d57.715637046285416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff404c2147afb%3A0xc07741ba0375c5a3!2zU23DtnJzbG90dHNnYXRhbiwgR8O2dGVib3Jn!5e0!3m2!1ssv!2sse!4v1515890675822" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+    html += 'Smörslottsgatan 6<br/>416 77 Göteborg'
     html += "</div>";
     $(".main").html(html)
 }
@@ -83,35 +85,29 @@ function visaStart(){
     $(".main").append('<img id="mainlogga" src="bilder/sportsnutrition.png"/>')
     $(".memberlogin").hide();
 }
-//VARUKORGEN
+
+// ------- VARUKORGEN ---------------
+
+
 function visaCart() {
 
      ///TEST MED JANNES KOD START
 
     $(".cartSummeringAntalOchPris").html("");
 
-    totalProductsInCart = 0
-    totalPrice = 0
-
     for (i = 0; i < cartList.length; i++) {
-        köp = cartList[i]
-
         totalProductsInCart++;
-        totalPrice = totalPrice + produkter[i].prodPrice;
-          
-          console.log (köp)
-          $(".cartSummeringAntalOchPris").append("<br/>" + produkter[i].prodPrice);
-          
     }
+         
 
     //TEST MED JANNES KOD SLUT  
 
     
-    var html = '<h1 class="carth1">Kundvagn</h1>';
-    html += "<div class='cartDiv'>";
+    var html = "<div class='cartDiv'>";
+    html += '<h1 class="carth1">Kundvagn</h1>';
     html += "<div class='cartSummeringAntalOchPris'></div>";
-    html += "<div class='cartSummeringTotalPris'></div>";
-    html += '<button class="clearlist">Töm kundvagn</button>';
+    html += '<div><button class="clearlist">Slutför beställningen</button></div>';
+    html += "<div><hr/></div>";
     html += "<div class='cartCardsDiv'>";
     
     $(".undermeny").empty();
@@ -121,7 +117,7 @@ function visaCart() {
             if(cartList[i] == produkter[k].id) {
                 html += "<div class='cartCardDiv'>";
                 
-                html += "<div class='CardprodNameDiv'>";
+                html += "<div class='cartCardProdNameDiv'>";
                 html += "<p class='cartCardProdname'>"+produkter[k].prodName+"</p>";
                 html += "</div>";
 
@@ -134,6 +130,7 @@ function visaCart() {
                 html += "</div>";
 
                 html += "</div>";
+                totalPrice += produkter[k].prodPrice
             }
         }    
     }
@@ -148,13 +145,12 @@ function visaCart() {
 //Huvudmeny början
 function addMainList() {
     $(".meny").append("<button class='menybutton' onclick='visaStart()'>Start</button>");
-    $(".meny").append("<button class='menybutton' onclick='visaInfo()'>Info</button>");
 
     for(var i = 0; i < huvudkategorier.length; i++) {
         $(".meny").append("<button class='menybutton' onclick='visaSubMenu("+huvudkategorier[i].id+")'>"+huvudkategorier[i].kategoriname+"</button>");
     }
 
-    $(".meny").append("<button class='menybutton' onclick='visaKontakt()'>Kontakt</button>");
+    $(".meny").append("<button class='menybutton' onclick='visaOmOss()'>Om oss</button>");
     $(".meny").append("<button class='menybutton' onclick='visaCart()'>Kundvagn</button>");
 }
 

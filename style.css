@@ -79,7 +79,7 @@ body{
     color: #fff;
     background-color: rgb(90, 92, 90);
     border: 2px solid rgb(115, 116, 115);
-    font-size: 1.8vh;
+    font-size: 2vh;
   }  
 
 .menybutton:hover {background-color: blue;}
@@ -133,21 +133,21 @@ body{
 }
 .main > h1{
     margin:0px;
+    font-size: 90px;
 }
 #mainlogga{
-    width:85%;
-    height: 80%;
+    width:800px;
+    height: 400px;
     margin-bottom: 10%;
 }
 /* produktkortscss start */
 .cardDiv{
     border:2px solid black;
-    height:70vh;
-    width: 35%;
+    height:500px;
+    width: 400px;
     margin-bottom: 3vh;
     margin-top:5vh;
     background-color: white;
-    /* background-color: rgba(202, 199, 199, 0.842); */
     overflow: auto;
     color: rgb(59, 59, 59);
 }
@@ -195,6 +195,8 @@ body{
 .buy{
     width:20vw;
     height:5vh;
+    
+    font-size: 20px;
 }
 /* produktkortscss slut */
 
@@ -202,10 +204,9 @@ body{
 .cartSummeringAntalOchPris{
     font-size: 20px;
     border:3px solid white;
-    width:60%;
-    height:11%;
+    width:350px;
+    height:130px;
     margin:auto;
-    margin-top:5%;
     border-radius: 15%;
     background-color: rgba(194, 31, 99, 0.342)
 }
@@ -229,42 +230,49 @@ body{
     
 }
 /* Kortet i carten */
+.cartDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
 .cartCardDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border:2px solid black;
-    height:30vh;
-    width: 20%;
-    margin-bottom: 1.5vh;
-    margin-top:5vh;
+    height:200px;
+    width: 200px;
+    margin: 20px;
     background-color: white;
-    /* background-color: rgba(202, 199, 199, 0.842); */
     overflow: auto;
     color: rgb(59, 59, 59);
     font-family: 'Rozha One', serif;
-
-
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
-.CardprodNameDiv{
-    margin:0px;
-    font-size: 18px;
-    height: 20%;
+.cartCardDiv:hover {
+    box-shadow: 0 8px 26px 0 blue;
+}
+.cartCardProdNameDiv{
+    font-size: 13px;
+    height: 40px;
+    width:100%;
 }
 .cartCardImageDiv{
     margin:0px;
     padding:0px;
-    height: 60%;
-}
-.cartProdbild{
-    width: 50%;
-    height:90%; 
-    margin:0px;
-    padding:0px;
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-    
+    height: 90px;
 }
 .cartCardPrisDiv{
-    height: 20%;
+    height: 40px;
+}
+.cartProdbild{
+    width: 100px;
+    height:90px; 
+    margin-top:5px;
+    padding:0px;
+    width: auto\9; /* ie8 */   
 }
 .cartCardpris{
     color:rgb(216, 186, 52);
