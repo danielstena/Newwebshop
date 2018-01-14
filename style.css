@@ -67,6 +67,8 @@ body{
     grid-area: meny;
 }
 .menybutton {
+    font-family: 'Rozha One', serif;
+
     width: 8.5vw;
     height: 3.5vh;
     display: inline-block;
@@ -105,6 +107,8 @@ body{
     border: 2px solid rgb(219, 219, 219);
     border-radius: 50px;
     font-size: 1.7vh;
+    font-family: 'Rozha One', serif;
+
 }  
 .undermenybutton:hover {background-color: blue;}
   
@@ -125,6 +129,15 @@ body{
     font-size: 50px;
     color:white;
     min-height: 60vh;
+    margin: 0px;
+}
+.main > h1{
+    margin:0px;
+}
+#mainlogga{
+    width:85%;
+    height: 80%;
+    margin-bottom: 10%;
 }
 /* produktkortscss start */
 .cardDiv{
@@ -186,16 +199,20 @@ body{
 /* produktkortscss slut */
 
 /* kundvagns korts css start */
-.cartSummeringAntal{
+.cartSummeringAntalOchPris{
     font-size: 20px;
-    border:1px solid white;
-}
-.cartSummeringTotalPris{
-    font-size: 30px;
+    border:3px solid white;
+    width:60%;
+    height:11%;
+    margin:auto;
+    margin-top:5%;
+    border-radius: 15%;
+    background-color: rgba(194, 31, 99, 0.342)
 }
 .carth1{
     margin:0px;
-    border:1px solid white;
+    font-family: 'Rozha One', serif;
+
 }
 .cartCardsDiv{
     display: flex;
@@ -203,7 +220,7 @@ body{
     flex-wrap: wrap;
     width:100%;
     justify-content: space-around;
-    border:1px solid white;
+
 }
 .clearlist{
     width:200px;
@@ -222,26 +239,23 @@ body{
     /* background-color: rgba(202, 199, 199, 0.842); */
     overflow: auto;
     color: rgb(59, 59, 59);
+    font-family: 'Rozha One', serif;
+
 
 }
-.cartCardProdname{
+.CardprodNameDiv{
     margin:0px;
-    font-size: 20px;
-    height: 60px;
+    font-size: 18px;
+    height: 20%;
 }
-.cardImageDiv{
+.cartCardImageDiv{
     margin:0px;
     padding:0px;
-
-}
-.cardInfoDiv{
-    margin:0px;
-    padding:0px;
-    font-size: 10px;
+    height: 60%;
 }
 .cartProdbild{
-    width: 10vw;
-    height:15vh; 
+    width: 50%;
+    height:90%; 
     margin:0px;
     padding:0px;
     max-width: 100%;
@@ -249,19 +263,18 @@ body{
     width: auto\9; /* ie8 */
     
 }
-.cartCardinfo{
-    font-size: 15px;
-    height:40%;
-    margin-top:15px;
-    padding-left:10px;
-    padding-right:10px;
+.cartCardPrisDiv{
+    height: 20%;
 }
 .cartCardpris{
     color:rgb(216, 186, 52);
-    font-size: 2vh;
+    font-size: 3vh;
     margin:0px;
 }
-
+.kartDiv{
+    width: 80%;
+    margin-bottom:20%;
+}
 .footer1{
     grid-area: footer1;
     display: flex;

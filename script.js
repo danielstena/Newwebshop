@@ -46,7 +46,11 @@ $(document).ready(function(){
 function visaInfo() {
     $(".main").empty();
     $(".undermeny").empty();
-
+    var html = '<h1>Oss finner du här</h1>';
+    html += "<div class='kartDiv' width:500px; >";
+    html += '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.0483140255587!2d12.05361045095419!3d57.715637046285416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff404c2147afb%3A0xc07741ba0375c5a3!2zU23DtnJzbG90dHNnYXRhbiwgR8O2dGVib3Jn!5e0!3m2!1ssv!2sse!4v1515890675822" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+    html += "</div>";
+    $(".main").html(html)
 }
 
 function visaKontakt() {
@@ -75,15 +79,37 @@ function inloggad(){
 // Visa startsidan
 function visaStart(){
     $(".undermeny").empty();
-    $(".main").html('<h1>Welcome to Sports Nutrition</h1>');
+    $(".main").html('<h1>Welcome to</h1>');
+    $(".main").append('<img id="mainlogga" src="bilder/sportsnutrition.png"/>')
     $(".memberlogin").hide();
 }
 //VARUKORGEN
 function visaCart() {
 
+     ///TEST MED JANNES KOD START
+
+    $(".cartSummeringAntalOchPris").html("");
+
+    totalProductsInCart = 0
+    totalPrice = 0
+
+    for (i = 0; i < cartList.length; i++) {
+        köp = cartList[i]
+
+        totalProductsInCart++;
+        totalPrice = totalPrice + produkter[i].prodPrice;
+          
+          console.log (köp)
+          $(".cartSummeringAntalOchPris").append("<br/>" + produkter[i].prodPrice);
+          
+    }
+
+    //TEST MED JANNES KOD SLUT  
+
+    
     var html = '<h1 class="carth1">Kundvagn</h1>';
     html += "<div class='cartDiv'>";
-    html += "<div class='cartSummeringAntal'></div>";
+    html += "<div class='cartSummeringAntalOchPris'></div>";
     html += "<div class='cartSummeringTotalPris'></div>";
     html += '<button class="clearlist">Töm kundvagn</button>';
     html += "<div class='cartCardsDiv'>";
@@ -99,19 +125,13 @@ function visaCart() {
                 html += "<p class='cartCardProdname'>"+produkter[k].prodName+"</p>";
                 html += "</div>";
 
-                html += "<div class='cardImageDiv'>";
+                html += "<div class='cartCardImageDiv'>";
                 html += "<img src="+produkter[k].prodBild+" class='cartProdbild'/>";
                 html += "</div>";
 
-                html += "<div class='cardprisDiv'>";
+                html += "<div class='cartCardPrisDiv'>";
                 html += "<h2 class='cartCardpris'>"+produkter[k].prodPrice+" kr</h2>";
                 html += "</div>";
-                totalPrice.push(produkter[k].prodPrice);
-
-                html += "<div class='cartCardinfo'>";
-                html += "<p class='cardinfo'>"+produkter[k].prodDesc+"</p>";
-                html += "</div>";
-
 
                 html += "</div>";
             }
@@ -120,8 +140,8 @@ function visaCart() {
     html += '</div>';
     html += '</div>';
      $(".main").html(html);
-     $(".cartSummeringAntal").append("<p>Antal produkter i varukorgen: " + cartList.length + "</p>");
-     //$(".cartSummeringTotalPris").append("<p>Antal produkter i varukorgen: " + cartList.length + "</p>");
+     $(".cartSummeringAntalOchPris").append("<p>Antal produkter i varukorgen: " + totalProductsInCart + "</p>");
+     $(".cartSummeringAntalOchPris").append("<p>Totalt pris på varukorgen: " + totalPrice + " kr</p>");
      
 }
 
@@ -169,7 +189,6 @@ function visaProdukter(underID){
             html += "</div>";
         }
     }
-    console.log(totalPrice);
     $(".main").append(html);
  }
 
