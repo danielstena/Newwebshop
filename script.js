@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 //Slut på document ready!!
 
-function visaOmOss() {
+function visaInfo() {
     $(".main").empty();
     $(".undermeny").empty();
     var html = '<br><h1>Oss finner du här</h1><br>';
@@ -86,22 +86,19 @@ function visaStart(){
     $(".memberlogin").hide();
 }
 
-// ------- VARUKORGEN ---------------
-
+// ------- VARUKORGEN --------------- //
 
 function visaCart() {
 
-     ///TEST MED JANNES KOD START
-
+    // ---- Kod för att visa antal varor i varukorgen -- //
+    // -- BÖRJAN -- //
     $(".cartSummeringAntalOchPris").html("");
 
     for (i = 0; i < cartList.length; i++) {
         totalProductsInCart++;
     }
-         
 
-    //TEST MED JANNES KOD SLUT  
-
+    // -- SLUT -- //
     
     var html = "<div class='cartDiv'>";
     html += '<h1 class="carth1">Kundvagn</h1>';
@@ -144,14 +141,15 @@ function visaCart() {
 
 //Huvudmeny början
 function addMainList() {
-    $(".meny").append("<button class='menybutton' onclick='visaStart()'>Start</button>");
-
+    $(".restenMeny").append("<button class='menybutton' onclick='visaStart()'>Start</button>");
+    $(".restenMeny").append("<button class='menybutton' onclick='visaInfo()'>Info</button>");
+    $(".restenMeny").append("<button class='menybutton' onclick='visaKontakt()'>Kontakt</button>");
+    $(".restenMeny").append("<button class='menybutton' onclick='visaCart()'>Kundvagn</button>");
     for(var i = 0; i < huvudkategorier.length; i++) {
-        $(".meny").append("<button class='menybutton' onclick='visaSubMenu("+huvudkategorier[i].id+")'>"+huvudkategorier[i].kategoriname+"</button>");
+        $(".produktMeny, .mobilproductsmenu").append("<button class='menybutton' onclick='visaSubMenu("+huvudkategorier[i].id+")'>"+huvudkategorier[i].kategoriname+"</button>");
     }
 
-    $(".meny").append("<button class='menybutton' onclick='visaOmOss()'>Om oss</button>");
-    $(".meny").append("<button class='menybutton' onclick='visaCart()'>Kundvagn</button>");
+    
 }
 
 function visaProdukter(underID){
@@ -181,7 +179,6 @@ function visaProdukter(underID){
             html += "<p class='cardinfo'>"+produkter[i].prodDesc+"</p>";
             html += "</div>";
 
-
             html += "</div>";
         }
     }
@@ -189,10 +186,10 @@ function visaProdukter(underID){
  }
 
 function visaSubMenu(huvudID) {
-    $(".undermeny").empty();
+    $(".undermeny, .mobilProductsSubmenu").empty();
     for(var i = 0; i < underkategorier.length; i++) {
         if (underkategorier[i].huvudkategori == huvudID){
-            $(".undermeny").append("<button class='undermenybutton' onclick='visaProdukter("+underkategorier[i].id+")'>"+underkategorier[i].kategoriNamn+"</button>");
+            $(".undermeny, .mobilProductsSubmenu").append("<button class='undermenybutton' onclick='visaProdukter("+underkategorier[i].id+")'>"+underkategorier[i].kategoriNamn+"</button>");
         }
     }
 }

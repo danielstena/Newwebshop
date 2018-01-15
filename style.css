@@ -23,7 +23,7 @@ body{
     grid-area: header;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color:rgba(85, 83, 83, 0.884);
     margin-top:1.5vh;
     margin-bottom:1.5vh;
@@ -31,28 +31,20 @@ body{
     margin-left:1.5vh;
 }
 .headerlogo{
-    width:60%;
-    font-size: 5vw;
-    padding-top:2vh;
-    padding-left:4vh;
+    width:500px;
+    font-size: 60px;
+    padding-top:20px;
+    padding-left:40px;
     font-family: 'Rozha One', serif;
     color:white;
 }
 .headerlogin{
-    width:30%;
-    padding-top:5vh;
-    padding-left:10vh;
-}
-#login{
-    margin-top:5vh;
-    margin-left:10vw;
-}
-#psrnm, #pswrd{
-    margin-top:1vh;
-    margin-bottom:1vh;
+    width:200px;
+    margin: auto;
 }
 .headerproductscountdiv{
     margin-top:40px;
+    margin-right:20px;
 }
 #summeringsLink{
     text-decoration: none;
@@ -62,9 +54,13 @@ body{
 }
 .meny{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     grid-area: meny;
+}
+.mobilFooterproducts{
+    display: none;  
 }
 .menybutton {
     font-family: 'Rozha One', serif;
@@ -93,6 +89,8 @@ body{
     display: flex;
     justify-content: space-around;
     grid-area: undermeny;
+    width:505px;
+    margin-left: 517px;
 }
 .undermenybutton {
     width: 15vw;
@@ -314,11 +312,129 @@ body{
         font-size: 3vh;
         color:pink;
     }
+    .mobilProductMenu{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        position: fixed;
+        bottom:0px;
+    }
 
 }
 @media only screen and (max-width: 600px) {
     .headerlogo{
-        font-size: 3vh;
-        color:blue;
-    }       
+        font-size: 22px;
+        color:red;
+    } 
+    .main > h1{
+        font-size: 20px;
+    }      
+    #mainlogga{
+        width:340px;
+        height:300px;
+    }
+    .menybutton {
+        width:120px;
+        height: 100%;
+    }
+    .meny{
+        width: 100%;
+        margin: auto;
+    }
+    .mobilproducts{
+        display: flex;
+        flex-direction: column;
+        border:1px solid white;
+        width: 450px;
+    }
+    .mobilproductsmenu{
+        display: flex;
+        justify-content: space-around;
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .mobilProductsSubmenu{
+        display: flex;
+        justify-content: space-around;
+        width:70%;
+        margin:auto;
+    }
+    .produktMeny{
+        display: none;
+    }
+    .restenMeny{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        position: fixed;
+        bottom:0px;
+    }
+    #summeringsLink{
+        text-decoration: none;
+        color:white;
+        margin-top:0px;
+        font-size: 15px;
+    }
+    .headerproductscountdiv{
+        margin-top:25px;
+        margin-right:20px;
+    }
+    /* produktkortscss start */
+.cardDiv{
+    border:2px solid black;
+    height:400px;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    background-color: white;
+    overflow: auto;
+    color: rgb(59, 59, 59);
+}
+.cardProdname{
+    margin:0px;
+    padding:0px;
+    font-size: 20px;
+    height: 25px;
+    border:1px solid black;
+}
+.cardImageDiv{
+    margin:0px;
+    padding:0px;
+    border:1px solid black;
+}
+.cardInfoDiv{
+    margin:0px;
+    padding:0px;
+    font-size: 10px;
+}
+.prodbild{
+    width: 100px;
+    height:150px; 
+    
+}
+.cardinfo{
+    font-size: 15px;
+    height:40%;
+    margin-top:15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.cardpris{
+    color:rgb(216, 186, 52);
+    font-size: 5vh;
+    margin:0px;
+}
+.buyDiv{
+    margin:0px;
+    padding:0px;
+}
+.buy{
+    width:20vw;
+    height:5vh;
+    font-size: 10px;
+}
+/* produktkortscss slut */
+
+    
 }
