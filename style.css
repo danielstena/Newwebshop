@@ -134,8 +134,8 @@ body{
     font-size: 90px;
 }
 #mainlogga{
-    width:800px;
-    height: 400px;
+    width:100px;
+    height: 100px;
     margin-bottom: 10%;
 }
 /* produktkortscss start */
@@ -324,7 +324,7 @@ body{
 @media only screen and (max-width: 600px) {
     .headerlogo{
         font-size: 22px;
-        color:red;
+        color:white;
     } 
     .main > h1{
         font-size: 20px;
@@ -334,7 +334,7 @@ body{
         height:300px;
     }
     .menybutton {
-        width:120px;
+        width:80px;
         height: 100%;
     }
     .meny{
@@ -344,8 +344,8 @@ body{
     .mobilproducts{
         display: flex;
         flex-direction: column;
-        border:1px solid white;
-        width: 450px;
+        justify-content: space-between;
+        width: 550px;
     }
     .mobilproductsmenu{
         display: flex;
@@ -370,11 +370,19 @@ body{
         position: fixed;
         bottom:0px;
     }
+    #loginAndSum{
+        display: flex;
+        flex-direction: column;
+    }
     #summeringsLink{
-        text-decoration: none;
-        color:white;
         margin-top:0px;
         font-size: 15px;
+    }
+    .headerproductscountdiv{
+        width:100%;
+    }
+    .headerlogin{
+        padding-left: 20px;
     }
     .headerproductscountdiv{
         margin-top:25px;
@@ -395,13 +403,11 @@ body{
     margin:0px;
     padding:0px;
     font-size: 20px;
-    height: 25px;
-    border:1px solid black;
+    height: 45px;
 }
 .cardImageDiv{
     margin:0px;
     padding:0px;
-    border:1px solid black;
 }
 .cardInfoDiv{
     margin:0px;
@@ -410,7 +416,7 @@ body{
 }
 .prodbild{
     width: 100px;
-    height:150px; 
+    height:100px; 
     
 }
 .cardinfo{
@@ -422,17 +428,13 @@ body{
 }
 .cardpris{
     color:rgb(216, 186, 52);
-    font-size: 5vh;
+    font-size: 25px;
     margin:0px;
-}
-.buyDiv{
-    margin:0px;
-    padding:0px;
 }
 .buy{
-    width:20vw;
-    height:5vh;
-    font-size: 10px;
+    width:150px;
+    height:20px;
+    font-size: 13px;
 }
 /* produktkortscss slut */
 

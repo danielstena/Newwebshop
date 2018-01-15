@@ -81,7 +81,7 @@ function inloggad(){
 // Visa startsidan
 function visaStart(){
     $(".undermeny").empty();
-    $(".main").html('<h1>Welcome to</h1>');
+    $(".main").empty();
     $(".main").append('<img id="mainlogga" src="bilder/sportsnutrition.png"/>')
     $(".memberlogin").hide();
 }
@@ -152,6 +152,8 @@ function addMainList() {
     
 }
 
+// ----- PRODUKTER START ------//
+
 function visaProdukter(underID){
     $(".main").empty();
     var html = '';
@@ -184,6 +186,7 @@ function visaProdukter(underID){
     }
     $(".main").append(html);
  }
+// ----- PRODUKTER SLUT ------//
 
 function visaSubMenu(huvudID) {
     $(".undermeny, .mobilProductsSubmenu").empty();
