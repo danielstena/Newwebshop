@@ -46,15 +46,32 @@ $(document).ready(function(){
 
 function visaInfo() {
     $(".main").empty();
+    var html = '<div class="informationDiv">'
+    html += '<h1>SNABBA FRÅGOR</h1><b>Finns det någon fysisk butik man kan handla i?</b>';
+    html += '<br>Svar: För att erbjuda bästa möjliga priser sker i dagsläget all försäljning via internet.<br>'
+    html += '<br><b>Kan man beställa från er butik på nätet och sedan hämta ut det hos er?</b>';
+    html += '<br>Svar: Tyvärr har vi inte möjlighet att ta emot kunder för paketutlämning på vårt lager, men vår lagerpersonal skickar snabbt hem varorna till er i stället.<br>'
+    html += '<br><b>Vad gör jag om jag inte har en e-postadress?</b>'
+    html += '<br>Svar: Om du inte har tillgång till en e-postadress kan du ringa vår kundtjänst på 0220-601 001, vardagar mellan kl. 10:00-15:00, så hjälper de dig gärna att lägga en beställning.<br>'
+    html += '<br><b>Varför måste man ha en e-postadress för att beställa?</b>'
+    html += '<br>Svar: För att vi ska kunna skicka en orderbekräftelse till dig på ett snabbt och smidigt sätt så att du ser att all information och dina kontaktuppgifter stämmer överens samt så att du kan ska kunna skapa ett konto och samla poäng på alla dina köp.<br>'
+    html += '<br><b>Finns det möjlighet att lägga en beställning på något annat sätt än via er nätbutik?</b>'
+    html += '<br>Svar: Det går även bra att ringa in till kundtjänsten på 0220-601 001, vardagar mellan 10:00-15:00, och lägga en beställning på telefon eller så kan man maila in till vår kundtjänst.<br>'
+    html += '<br><b>Går det att beställa till utlandet?</b>'
+    html += '<br>Svar: I dagsläget kan vi bara leverera till kunder i Sverige. Via vår danska butik www.sportsnutrition.dk kan man dock beställa varor till Danmark.<br>'
+    html += '</div>'
+    
+    $(".main").html(html)
+
 }
 
 function visaKontakt() {
     $(".main").empty();
     $(".undermeny").empty();
-    var html = '<br><h1>Oss finner du här</h1><br>';
-    html += "<div class='kartDiv' width:500px; >";
-    html += '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.0483140255587!2d12.05361045095419!3d57.715637046285416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff404c2147afb%3A0xc07741ba0375c5a3!2zU23DtnJzbG90dHNnYXRhbiwgR8O2dGVib3Jn!5e0!3m2!1ssv!2sse!4v1515890675822" width="100%" height="450" frameborder="0" id="map" style="border:0" allowfullscreen></iframe>';
-    html += '<p id="address">Smörslottsgatan 6<br/>416 77 Göteborg</p>'
+    var html = '<h1>Vårat huvudkontor finner du här</h1>';
+    html += "<div class='kartaOchKontaktinfoDiv' width:500px; >";
+    html += '<div id="mapDiv"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.0483140255587!2d12.05361045095419!3d57.715637046285416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff404c2147afb%3A0xc07741ba0375c5a3!2zU23DtnJzbG90dHNnYXRhbiwgR8O2dGVib3Jn!5e0!3m2!1ssv!2sse!4v1515890675822" width="100%" height="450" frameborder="0" id="map" style="border:0" allowfullscreen></iframe></div>';
+    html += '<div id="addressDiv"><br/>Smörslottsgatan 6<br/>416 77 Göteborg<br><br>Telefonnr: 031-1737484</div>'
     html += "</div>";
     $(".main").html(html)
 }
