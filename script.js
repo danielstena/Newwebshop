@@ -46,19 +46,17 @@ $(document).ready(function(){
 
 function visaInfo() {
     $(".main").empty();
-    $(".undermeny").empty();
-    var html = '<br><h1>Oss finner du här</h1><br>';
-    html += "<div class='kartDiv' width:500px; >";
-    html += '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.0483140255587!2d12.05361045095419!3d57.715637046285416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff404c2147afb%3A0xc07741ba0375c5a3!2zU23DtnJzbG90dHNnYXRhbiwgR8O2dGVib3Jn!5e0!3m2!1ssv!2sse!4v1515890675822" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
-    html += 'Smörslottsgatan 6<br/>416 77 Göteborg'
-    html += "</div>";
-    $(".main").html(html)
 }
 
 function visaKontakt() {
     $(".main").empty();
     $(".undermeny").empty();
-
+    var html = '<br><h1>Oss finner du här</h1><br>';
+    html += "<div class='kartDiv' width:500px; >";
+    html += '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.0483140255587!2d12.05361045095419!3d57.715637046285416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff404c2147afb%3A0xc07741ba0375c5a3!2zU23DtnJzbG90dHNnYXRhbiwgR8O2dGVib3Jn!5e0!3m2!1ssv!2sse!4v1515890675822" width="100%" height="450" frameborder="0" id="map" style="border:0" allowfullscreen></iframe>';
+    html += '<p id="address">Smörslottsgatan 6<br/>416 77 Göteborg</p>'
+    html += "</div>";
+    $(".main").html(html)
 }
 addToBasket = function(val) {
 
