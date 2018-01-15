@@ -306,18 +306,160 @@ body{
 
 @media only screen and (max-width: 1000px) {
     .headerlogo{
-        font-size: 3vh;
-        color:pink;
+        font-size: 22px;
+        color:white;
+    }   
+    .main{
+        margin-top:10px;
+    } 
+    #mainlogga{
+        width:240px;
+        height:200px;
     }
-    .mobilProductMenu{
+    .menybutton {
+        width:80px;
+        height: 40px;
+    }
+    .undermenybutton{
+        width:80px;
+    }
+    .meny{
+        width: 100%;
+        margin: auto;
+    }
+    .mobilproducts{
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 500px;
+    }
+    .mobilproductsmenu{
+        display: flex;
+        justify-content: space-around;
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .mobilProductsSubmenu{
+        display: flex;
+        justify-content: space-around;
+        width:70%;
+        margin:auto;
+    }
+    .produktMeny{
+        display: none;
+    }
+    .restenMeny{
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         width:100%;
         position: fixed;
         bottom:0px;
     }
-
+    #loginAndSum{
+        display: flex;
+        flex-direction: column;
+    }
+    #summeringsLink{
+        margin-top:0px;
+        font-size: 15px;
+    }
+    .headerproductscountdiv{
+        width:100%;
+    }
+    .headerlogin{
+        padding-left: 20px;
+    }
+    .headerproductscountdiv{
+        margin-top:25px;
+        margin-right:20px;
+    }
+    /* produktkortscss start */
+.cardDiv{
+    height:350px;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top:10px;
 }
+.cardProdname{
+    margin:0px;
+    padding:0px;
+    font-size: 20px;
+    height: 45px;
+}
+.cardImageDiv{
+    margin:0px;
+    padding:0px;
+}
+.cardInfoDiv{
+    margin:0px;
+    padding:0px;
+    font-size: 10px;
+}
+.prodbild{
+    width: 100px;
+    height:100px; 
+    
+}
+.cardinfo{
+    font-size: 15px;
+    height:40%;
+    margin-top:15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.cardpris{
+    color:rgb(216, 186, 52);
+    font-size: 25px;
+    margin:0px;
+}
+.buy{
+    width:150px;
+    height:20px;
+    font-size: 13px;
+}
+/* produktkortscss slut */
+.carth1{
+    font-size: 40px;
+}
+.cartSummeringAntalOchPris{
+    width:250px;
+    height:80px;
+    font-size: 15px;
+}
+div > hr{
+    width:230px;
+}
+.cartCardDiv{
+    width:100px;
+    height:120px;
+}
+.cartCardProdNameDiv{
+    font-size: 9px;
+    margin:0px;
+}
+.cartProdbild{
+    width:45px;
+    height: 50px;
+    margin:0px;
+}
+.cartCardpris{
+    font-size: 13px;
+    margin-top:0px;
+}
+
+/* --- Info CSS MOBIL --- */
+#address{
+    font-size: 18px;
+}
+#map{
+    width:230px;
+    height: 160px;
+    border:1px solid white;
+    margin:0px;
+}
+}
+
 @media only screen and (max-width: 600px) {
     .headerlogo{
         font-size: 22px;
