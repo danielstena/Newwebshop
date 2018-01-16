@@ -37,13 +37,13 @@ body{
 }
 .headerlogin{
     width:200px;
-    margin-top:40px;
+    margin-top:10px;
 }
 .headerproductscountdiv{
     margin-top:20px;
     margin-right:20px;
 }
-#summeringsLink{
+#produkterIHeader{
     text-decoration: none;
     color:white;
     margin-top:20px;
@@ -218,7 +218,7 @@ body{
     height:130px;
     margin:auto;
     border-radius: 15%;
-    background-color: rgba(194, 31, 99, 0.342)
+    background-color: rgba(88, 31, 194, 0.342)
 }
 .carth1{
     margin:0px;
@@ -237,6 +237,8 @@ body{
     width:200px;
     height:30px;
     font-size: 15px;
+    margin-bottom: 20px;
+    margin-top:20px;
     
 }
 /* --- CSS FÖR KUNDVAGNEN START ---- */
@@ -384,7 +386,7 @@ body{
         display: flex;
         justify-content: space-around;
         width:70%;
-        margin:auto;
+        margin-bottom:90px;
     }
     .produktMeny{
         display: none;
@@ -545,7 +547,6 @@ div > hr{
     }
     .meny{
         width: 100%;
-        margin: auto;
     } 
     .mobilproducts{
         display: flex;
@@ -581,7 +582,8 @@ div > hr{
         height: 40px;
     }
     .undermenybutton{
-        width:80px;
+        width:100px;
+        height: 20px;
     }
     .undermeny{
         display: none;

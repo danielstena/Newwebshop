@@ -84,9 +84,8 @@ addToBasket = function(val) {
     $("#produkterIHeader").html("")
     $("#produkterIHeader").append(cartList.length)
     
-    for (i = 0; i < cartList.length; i++) {
         totalProductsInCart++;
-    }
+    
 }
 
 function inloggad(){
