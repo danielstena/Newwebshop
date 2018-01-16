@@ -4,7 +4,7 @@ var huvudkategorier;
 var cartList = [];
 var ourUser = "test";
 var ourPassword = "test";
-totalProductsInCart = 0
+var totalProductsInCart = 0;
 totalPrice = 0
 
 $(document).ready(function(){
@@ -71,7 +71,7 @@ function visaKontakt() {
     var html = '<h1>Vårat huvudkontor finner du här</h1>';
     html += "<div class='kartaOchKontaktinfoDiv' width:500px; >";
     html += '<div id="mapDiv"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.0483140255587!2d12.05361045095419!3d57.715637046285416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff404c2147afb%3A0xc07741ba0375c5a3!2zU23DtnJzbG90dHNnYXRhbiwgR8O2dGVib3Jn!5e0!3m2!1ssv!2sse!4v1515890675822" width="100%" height="450" frameborder="0" id="map" style="border:0" allowfullscreen></iframe></div>';
-    html += '<div id="addressDiv"><br/>Smörslottsgatan 6<br/>416 77 Göteborg<br><br>Telefonnr: 031-1737484</div>'
+    html += '<div id="addressDiv"><br/><br/>Smörslottsgatan 6<br/>416 77 Göteborg<br><br>Telefonnr: 031-1737484</div>'
     html += "</div>";
     $(".main").html(html)
 }
@@ -79,12 +79,14 @@ addToBasket = function(val) {
 
     //Vilket nummer har vi klickat på
     cartList.push(val);
-
     //spara vår nya array i localstorage
     localStorage.cartList = JSON.stringify(cartList);
-    $(".headerproductscountdiv").html("")
-    $(".headerproductscountdiv").append("<a href='#' id='summeringsLink' onclick='visaCart()'>Produkter i varukorgen: "+cartList.length+"</a>")
+    $("#produkterIHeader").html("")
+    $("#produkterIHeader").append(cartList.length)
     
+    for (i = 0; i < cartList.length; i++) {
+        totalProductsInCart++;
+    }
 }
 
 function inloggad(){
@@ -104,14 +106,14 @@ function visaStart(){
 // ------- VARUKORGEN --------------- //
 
 function visaCart() {
-
+    totalPrice = 0;
     // ---- Kod för att visa antal varor i varukorgen -- //
     // -- BÖRJAN -- //
     $(".cartSummeringAntalOchPris").html("");
 
-    for (i = 0; i < cartList.length; i++) {
-        totalProductsInCart++;
-    }
+    // for (i = 0; i < cartList.length; i++) {
+    //     totalProductsInCart++;
+    // }
 
     // -- SLUT -- //
     
@@ -124,8 +126,10 @@ function visaCart() {
     
     $(".undermeny").empty();
     
+    
     for(var i = 0; i < cartList.length; i++) {
         for(var k = 0; k < produkter.length; k++){
+            
             if(cartList[i] == produkter[k].id) {
                 html += "<div class='cartCardDiv'>";
                 
@@ -142,13 +146,16 @@ function visaCart() {
                 html += "</div>";
 
                 html += "</div>";
-                totalPrice += produkter[k].prodPrice
+                
+            totalPrice += produkter[k].prodPrice
+                
             }
         }    
     }
     html += '</div>';
     html += '</div>';
      $(".main").html(html);
+     
      $(".cartSummeringAntalOchPris").append("<p>Antal produkter i varukorgen: " + totalProductsInCart + "</p>");
      $(".cartSummeringAntalOchPris").append("<p>Totalt pris på varukorgen: " + totalPrice + " kr</p>");
      

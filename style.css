@@ -49,6 +49,8 @@ body{
     margin-top:20px;
     font-size: 20px;
 }
+/* --- CSS FÖR MENYN START ---- */
+
 .meny{
     display: flex;
     flex-direction: row;
@@ -62,7 +64,8 @@ body{
     width:650px;
 }
 .restenMeny{
-    width:550px;
+    width:100%;
+
 }
 .undermeny{
     display: flex;
@@ -120,6 +123,11 @@ body{
     box-shadow: 3 1px #666;
     transform: translateY(4px);
 }
+
+/* --- CSS FÖR MENYN SLUT ---- */
+
+/* --- CSS FÖR MAIN START ---- */
+
 .main{
     grid-area: main;
     display: flex;
@@ -138,13 +146,17 @@ body{
     width:400px;
     height: 300px;
 }
-/* produktkortscss start */
+/* --- CSS FÖR MAIN SLUT ---- */
+
+
+
+/* --- CSS FÖR PRODUKTKORT START ---- */
 .cardDiv{
     border:2px solid black;
     height:500px;
     width: 400px;
-    margin-bottom: 3vh;
-    margin-top:5vh;
+    margin-bottom: 30px;
+    margin-top:30px;
     background-color: white;
     overflow: auto;
     color: rgb(59, 59, 59);
@@ -196,9 +208,9 @@ body{
     
     font-size: 20px;
 }
-/* produktkortscss slut */
+/* --- CSS FÖR PRODUKTKORT SLUT ---- */
 
-/* --- kundvagns korts css start ---- */
+/* --- CSS FÖR KUNDVAGNEN START ---- */
 .cartSummeringAntalOchPris{
     font-size: 20px;
     border:3px solid white;
@@ -227,7 +239,9 @@ body{
     font-size: 15px;
     
 }
-/* --- Kortet i carten ---- */
+/* --- CSS FÖR KUNDVAGNEN START ---- */
+
+/* --- CSS FÖR KUNDVAGNENS PRODUKTKORT START ---- */
 .cartDiv{
     display: flex;
     flex-direction: column;
@@ -277,8 +291,9 @@ body{
     font-size: 3vh;
     margin:0px;
 }
-/* --- KONTAKT CSS START ----*/
+/* --- CSS FÖR KUNDVAGNS PRODUKTKORT SLUT ---- */
 
+/* --- CSS FÖR KONTAKT SIDAN START ---- */
 .kartaOchKontaktinfoDiv{
     display:flex;
     flex-direction: row;
@@ -293,25 +308,9 @@ body{
     width:30%;
     font-size: 20px;
 }
+/* --- CSS FÖR KONTAKT SIDAN SLUT ---- */
 
-/* --- KONTAKT CSS SLUT ----*/
-
-.footer1{
-    grid-area: footer1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border:1px solid black;
-    background-color:rgba(85, 83, 83, 0.884);
-}
-.footer1left, .footer1middle, .footer1right{
-    text-align: center;
-    width:30%;
-}
-.betalning{
-    width:100%;
-    height:auto;
-}
+/* --- CSS FÖR FOOTER START ---- */
 .footer{
     grid-area: footer;
     display: flex;
@@ -319,41 +318,65 @@ body{
     flex-direction: row;
     justify-content: space-around;
     background-color:rgba(85, 83, 83, 0.884);
-
+/* --- CSS FÖR FOOTER SLUT ---- */
 }
 
 @media only screen and (max-width: 1000px) {
+    .container{
+        grid-template-columns: 10vw 80vw 10vw ;
+        grid-template-rows: 20vh 5vh 5vh auto 5vh;
+        grid-template-areas: 
+        "header header header"
+        "meny meny meny"
+        ". undermeny ."
+        ". main ."
+        ". footer ."
+        ;
+    }
+    .header{
+        margin:0px;
+    }
     .headerlogo{
-        font-size: 22px;
+        font-size: 20px;
         color:white;
-    }   
-    .main{
-        margin-top:10px;
-    } 
-    #mainlogga{
-        width:240px;
-        height:200px;
+    }  
+    #loginAndSum{
+        display: flex;
+        flex-direction: column;
     }
-    .menybutton {
-        width:80px;
-        height: 40px;
+    #produkterIHeader{
+        margin-top:40px;
+        font-size: 15px;
+        color:white;
     }
-    .undermenybutton{
-        width:80px;
+    .headerproductscountdiv{
+        width:100%;
+    }
+    .headerlogin{
+        padding-left: 0px;
+        margin: 0px;
+    }
+    .login{
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .headerproductscountdiv{
+        margin-top:5px;
+        margin-right:20px;
     }
     .meny{
         width: 100%;
         margin: auto;
-    }
+    } 
     .mobilproducts{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 500px;
+        width: 100%;
     }
     .mobilproductsmenu{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width:100%;
         margin-bottom: 10px;
     }
@@ -374,23 +397,23 @@ body{
         position: fixed;
         bottom:0px;
     }
-    #loginAndSum{
-        display: flex;
-        flex-direction: column;
+    .menybutton {
+        width:230px;
+        height: 40px;
     }
-    #summeringsLink{
-        margin-top:0px;
-        font-size: 15px;
+    .undermenybutton{
+        width:230px;
+        height:100%;
     }
-    .headerproductscountdiv{
-        width:100%;
+    .undermeny{
+        display: none;
     }
-    .headerlogin{
-        padding-left: 20px;
-    }
-    .headerproductscountdiv{
-        margin-top:25px;
-        margin-right:20px;
+    .main{
+        margin-top:10px;
+    } 
+    #mainlogga{
+        width:240px;
+        height:200px;
     }
     /* produktkortscss start */
 .cardDiv{
@@ -473,37 +496,57 @@ div > hr{
 #map{
     width:230px;
     height: 160px;
-    border:1px solid white;
     margin:0px;
-}
-.undermeny{
-    display: none;
 }
 }
 
 @media only screen and (max-width: 600px) {
+    .container{
+        grid-template-columns: 10vw 80vw 10vw ;
+        grid-template-rows: 20vh 5vh 5vh auto 5vh;
+        grid-template-areas: 
+        "header header header"
+        "meny meny meny"
+        ". undermeny ."
+        ". main ."
+        ". footer ."
+        ;
+    }
+    .header{
+        margin:0px;
+    }
     .headerlogo{
-        font-size: 22px;
+        font-size: 20px;
         color:white;
-    }   
-    .main{
-        margin-top:10px;
-    } 
-    #mainlogga{
-        width:240px;
-        height:200px;
+    }  
+    #loginAndSum{
+        display: flex;
+        flex-direction: column;
     }
-    .menybutton {
-        width:80px;
-        height: 40px;
+    #produkterIHeader{
+        margin-top:40px;
+        font-size: 15px;
+        color:white;
     }
-    .undermenybutton{
-        width:80px;
+    .headerproductscountdiv{
+        width:100%;
+    }
+    .headerlogin{
+        padding-left: 0px;
+        margin: 0px;
+    }
+    .login{
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .headerproductscountdiv{
+        margin-top:5px;
+        margin-right:20px;
     }
     .meny{
         width: 100%;
         margin: auto;
-    }
+    } 
     .mobilproducts{
         display: flex;
         flex-direction: column;
@@ -512,7 +555,7 @@ div > hr{
     }
     .mobilproductsmenu{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width:100%;
         margin-bottom: 10px;
     }
@@ -533,23 +576,22 @@ div > hr{
         position: fixed;
         bottom:0px;
     }
-    #loginAndSum{
-        display: flex;
-        flex-direction: column;
+    .menybutton {
+        width:80px;
+        height: 40px;
     }
-    #summeringsLink{
-        margin-top:0px;
-        font-size: 15px;
+    .undermenybutton{
+        width:80px;
     }
-    .headerproductscountdiv{
-        width:100%;
+    .undermeny{
+        display: none;
     }
-    .headerlogin{
-        padding-left: 20px;
-    }
-    .headerproductscountdiv{
-        margin-top:25px;
-        margin-right:20px;
+    .main{
+        margin-top:10px;
+    } 
+    #mainlogga{
+        width:240px;
+        height:200px;
     }
     /* produktkortscss start */
 .cardDiv{
