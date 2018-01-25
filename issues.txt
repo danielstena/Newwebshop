@@ -1,0 +1,23 @@
+Kundlistan visar en lista på alla kunder. 
+
+Startsidan får ni fylla med valfritt innehåll. (admin sidan)
+
+Vi skall kunna komma åt en adminsida om vi går in på er domän/admin. Inloggade på admin (här kan ni sätta ett fast lösenord) så skall vi ha meny alternativen: start, kundlista, orderlista, epost lista.
+
+Innan vi kan beställa produkterna så ska vi få möjligheten att antingen logga in eller skapa ett konto.
+
+Går vi till kundvagnssidan så skall den visa våra produkter i kundvagnen, samt räkna ihop totalsumman, plus 55kr i frakt.
+
+Vi skall kunna lägga produkter i en kundvagn. 
+
+Klickar vi på en produkt ska vi komma till en produktsida med mer info. 
+
+Det skall finnas plats för en undermeny som visar en lista på underkategorier som tillhör huvudmeny-kategorierna.
+
+Start sidan får ni fylla med valfritt innehåll.
+
+Huvudmenyn skall innehålla: start, 4 produktkategorier (huvudkategorier från en json fil), info, kontakt, kundvagn.
+
+Lägg upp ert projekt på git, samt länk till projektet på er live server.
+
+Sidan skall vara responsiv. 
