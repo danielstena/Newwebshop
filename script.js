@@ -5,16 +5,17 @@ var cartList = [];
 var ourUser = "test";
 var ourPassword = "test";
 var totalProductsInCart = 0;
-totalPrice = 0
+totalPrice = 0;
+var ifInlogged = false;
 
 $(document).ready(function(){
    loadData();
    if(localStorage.cartList) cartList = JSON.parse(localStorage.cartList);
 
     if(sessionStorage.ourUser) {
+        console.log("här")
         inloggad();
-        $(".memberlogin").hide();
-        $(".headerlogin").show();
+        
     
     } else {
         visaStart();
@@ -84,14 +85,14 @@ addToBasket = function(val) {
     $("#produkterIHeader").html("")
     $("#produkterIHeader").append(cartList.length)
     
-        totalProductsInCart++;
-    
+    totalProductsInCart++;
 }
 
 function inloggad(){
     $(".main").html("<h1>Welcome Member</h1>");
     $(".memberlogin").show();
     $(".headerlogin").hide();
+    ifInlogged = true;
 }
 
 // Visa startsidan
@@ -100,12 +101,13 @@ function visaStart(){
     $(".main").empty();
     $(".main").append('<img id="mainlogga" src="bilder/sportsnutrition.png"/>')
     $(".memberlogin").hide();
+    
 }
 
 // ------- VARUKORGEN --------------- //
 
 function visaCart() {
-    totalPrice = 0;
+    totalPrice = 55;
     // ---- Kod för att visa antal varor i varukorgen -- //
     // -- BÖRJAN -- //
     $(".cartSummeringAntalOchPris").html("");
@@ -119,12 +121,16 @@ function visaCart() {
     var html = "<div class='cartDiv'>";
     html += '<h1 class="carth1">Kundvagn</h1>';
     html += "<div class='cartSummeringAntalOchPris'></div>";
-    html += '<div><button class="clearlist">Slutför beställningen</button></div>';
+    html += "<p>Logga in för att slutföra beställningen</p>";
+ 
+    if (ifInlogged == true){
+        html += '<div><button class="clearlist">Slutför beställningen</button></div>';
+    }
     html += "<div><hr/></div>";
     html += "<div class='cartCardsDiv'>";
     
     $(".undermeny").empty();
-    
+
     
     for(var i = 0; i < cartList.length; i++) {
         for(var k = 0; k < produkter.length; k++){
@@ -154,9 +160,8 @@ function visaCart() {
     html += '</div>';
     html += '</div>';
      $(".main").html(html);
-     
      $(".cartSummeringAntalOchPris").append("<p>Antal produkter i varukorgen: " + totalProductsInCart + "</p>");
-     $(".cartSummeringAntalOchPris").append("<p>Totalt pris på varukorgen: " + totalPrice + " kr</p>");
+     $(".cartSummeringAntalOchPris").append("<p>Totalt pris på varukorgen: " + totalPrice + " kr varav 55kr är frakt </p>");
      
 }
 
@@ -170,7 +175,6 @@ function addMainList() {
         $(".produktMeny, .mobilproductsmenu").append("<button class='menybutton' onclick='visaSubMenu("+huvudkategorier[i].id+")'>"+huvudkategorier[i].kategoriname+"</button>");
     }
 
-    
 }
 
 // ----- PRODUKTER START ------//

@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sports-nutrition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="admin.css" />   
+</head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <div class="headerlogo">
+                ADMIN
+            </div>
+            <div id="loginAndSum">    
+                <div class="headerproductscountdiv">Produkter i varukorgen: <a href="#" id="produkterIHeader" onclick='visaCart()'></a></div>
+                <div class="headerlogin">
+                    <form class="login">
+                        <input class="usrnm" type="text" placeholder="Username" /><br/>
+                        <input class="pswrd" type="password" placeholder="Password" /><br/>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div class="memberlogin">
+                    <button class="logout">Log out</button>
+                </div>    
+            </div>
+        </div>
+        
+        <div class="meny">
+            <div class="restenMeny"></div>
+            <div class="produktMeny"></div>
+            <div class="mobilproducts">
+                <div class="mobilproductsmenu"></div>
+                <div class="mobilProductsSubmenu"></div>
+            </div>
+        </div>
+        
+        
+        <div class="undermeny"></div>
+        
+        <div class="main"></div>
+        
+        <div class="footer">
+            <p>Copyright Night X Designs AB</p>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    </body>
+</html>
