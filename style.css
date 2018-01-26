@@ -1,5 +1,5 @@
 body{
-    max-width: 1280px;
+    margin: auto;
     background-image: url(bilder/sky.jpg);
     background-repeat: repeat;
 }
@@ -7,7 +7,7 @@ body{
     padding:0px;
     display: grid;
     width:100%;
-    grid-template-columns: 10vw 80vw 10vw ;
+    grid-template-columns: 128px 1024px 128px;
     grid-template-rows: 20vh 5vh 5vh auto 5vh;
     grid-template-areas: 
     "header header header"

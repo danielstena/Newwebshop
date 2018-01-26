@@ -40,68 +40,62 @@ $(document).ready(function(){
 //Slut på document ready!!
 
 
+//Detta händer när man kommer till sidan
+function visaStart(){
+    $(".undermeny").empty();
+    $(".main").empty();
+    $(".main").append('<div><h1>Hej där!</h1><h2>Logga in för att komma till adminsidan</h2><div>')
+    $(".memberlogin").hide();
+    $(".meny").hide();
+}
+
 function inloggad(){
-    $(".main").html("<h1>Welcome Member</h1>");
+    $(".main").html("<h1>Welcome to Admin</h1>");
     $(".memberlogin").show();
     $(".headerlogin").hide();
+    $(".meny").show();
 }
 
-// Visa startsidan
-function visaKundlista(){
-    $(".main").empty();
-    console.log(kunder)
-    
-    html += "<div class='cartCardsDiv'>";
 
-    for(var i = 0; i < kunder.length; i++) {
-
-        var html = '<div id="kundlistaAdmin"><ul>';
-        html += '<li>'+ kunder[i].id + '</li>';
-        html += '<li> '+ kunder[i].email + ' </li>';
-        html += '<li> '+ kunder[i].password + '</li>';
-        html += '</ul></div>';
-    }
-    html += "</ul></div>"
-    $(".main").append(html)
-
-
-}
-
-function visaStart(){
-    // for(var i = 0; i < kunder.length; i++) {
-    //     // $(".main").append(<p>kunder[i]);
-    // }
-
-}
-
-function visaepostlista(){
-    // for(var i = 0; i < kunder.length; i++) {
-    //     // $(".main").append(<p>kunder[i]);
-    // }
-
-}
-
-// ------- VARUKORGEN --------------- //
-
-//Huvudmeny början
+//ADMIN MENY 
 function addMainList() {
-    $(".restenMeny").append("<button class='menybutton' onclick='visaStart()'>Start</button>");
-    $(".restenMeny").append("<button class='menybutton' onclick='visaKundlista()'>Kundlista</button>");
-    $(".restenMeny").append("<button class='menybutton' onclick='visaKontakt()'>Orderlista</button>");
-    $(".restenMeny").append("<button class='menybutton' onclick='visaepostlista()'>Epostlista</button>");
+    $(".meny").append("<button class='menybutton' onclick='inloggad()'>Start</button>");
+    $(".meny").append("<button class='menybutton' onclick='visaKundlista()'>Kundlista</button>");
+    $(".meny").append("<button class='menybutton' onclick='visaOrderlista()'>Orderlista</button>");
+    $(".meny").append("<button class='menybutton' onclick='visaepostlista()'>Epostlista</button>");
       
 }
 
+// Visa Kundlista
+function visaKundlista(){
+    $(".main").empty();
 
+    $(".main").append("<div id='kundlistaAdmin'><ul><li><h1>Kundlista</h1></li></ul></div>");
 
-function visaSubMenu(huvudID) {
-    $(".undermeny, .mobilProductsSubmenu").empty();
-    for(var i = 0; i < underkategorier.length; i++) {
-        if (underkategorier[i].huvudkategori == huvudID){
-            $(".undermeny, .mobilProductsSubmenu").append("<button class='undermenybutton' onclick='visaProdukter("+underkategorier[i].id+")'>"+underkategorier[i].kategoriNamn+"</button>");
-        }
+    for(var i = 0; i < kunder.length; i++) {
+        $("#kundlistaAdmin").append("<ul><li>"+kunder[i].id+"</li><li>"+kunder[i].email+"</li><li>"+kunder[i].password+"</li></ul><br>");
+    /*     var html = '<div id="kundlistaAdmin"><ul>';
+        html += '<li>'+ kunder[i].id + '</li>';
+        html += '<li> '+ kunder[i].email + ' </li>';
+        html += '<li> '+ kunder[i].password + '</li>';
+        html += '</ul></div>'; 
+        console.log(i) */
     }
 }
+
+function visaOrderlista(){
+    $(".main").empty();
+    $(".main").append('<div><h1>Hej där! </h1><h2>Här finns ingen Orderlista än så länge</h2></div>')
+}
+function visaepostlista(){
+    $(".main").empty();
+    $(".main").append('<div><h1>Hej där! </h1><h2>Här finns ingen E-postlista än så länge</h2></div>')
+}
+
+
+
+
+
 
 //Mina fetcher
 function loadData(){

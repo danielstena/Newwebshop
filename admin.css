@@ -2,12 +2,21 @@ body{
     max-width: 1280px;
     background-image: url(bilder/sky.jpg);
     background-repeat: repeat;
+    margin:auto
+}
+.memberlogin{
+    margin-right: 70px;
+    margin-top: 20px;
+}
+.logout{
+    width:150px;
+    height:40px;
 }
 .container{
     padding:0px;
     display: grid;
-    width:100%;
-    grid-template-columns: 10vw 80vw 10vw ;
+    max-width:100%;
+    grid-template-columns: 128px 1024px 128px ;
     grid-template-rows: 20vh 5vh 5vh auto 5vh;
     grid-template-areas: 
     "header header header"
@@ -54,24 +63,8 @@ body{
     flex-direction: row;
     justify-content: space-between;
     grid-area: meny;
-    width:100%;
-}
-.produktMeny{
-    display: flex;
-    justify-content: center;
-    width:650px;
-}
-.restenMeny{
-    width:100%;
-
-}
-.undermeny{
-    display: flex;
-    justify-content: space-around;
-    grid-area: undermeny;
-    width:100%;
-    margin-left: 0px;
-    margin-top:5px;
+    width:60%;
+    margin:auto;
 }
 .mobilproducts{
     display: none;  
@@ -328,6 +321,15 @@ body{
     background-color:rgba(85, 83, 83, 0.884);
 /* --- CSS FÖR FOOTER SLUT ---- */
 }
+#kundlistaAdmin{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
 
 @media only screen and (max-width: 1000px) {
 .container{
@@ -376,35 +378,7 @@ body{
     width: 100%;
     margin: auto;
 } 
-.mobilproducts{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-}
-.mobilproductsmenu{
-    display: flex;
-    justify-content: center;
-    width:100%;
-    margin-bottom: 10px;
-}
-.mobilProductsSubmenu{
-    display: flex;
-    justify-content: space-around;
-    width:70%;
-    margin-bottom:90px;
-}
-.produktMeny{
-    display: none;
-}
-.restenMeny{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width:100%;
-    position: fixed;
-    bottom:0px;
-}
+
 .menybutton {
     width:230px;
     height: 40px;
@@ -509,8 +483,12 @@ div > hr{
 #kundlistaAdmin{
     display: flex;
     flex-direction: column;
-
+    list-style-type: none;
 }
+ul{
+    list-style-type: none;
+}
+
 
 }
 
