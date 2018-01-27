@@ -209,7 +209,6 @@ function visaProdukter(underID){
                                  // -----FULL STORLEK PRODUKTER START ------//
 function showLargeProduct(val){
         $(".main").empty();
-        $(".main").append("<h1>hej</h1>");
         console.log([val])
 
     
@@ -220,16 +219,24 @@ function showLargeProduct(val){
                 
                 html = "<div id='FULLCardDiv'>";
                 
-                html += "<div class='cartCardProdNameDiv'>";
-                html += "<p class='cartCardProdname'>"+produkter[i].prodName+"</p>";
+                html += "<div>";
+                html += "<p id='FULLCardProdname'>"+produkter[i].prodName+"</p>";
                 html += "</div>";
 
-                html += "<div class='cartCardImageDiv'>";
-                html += "<img src="+produkter[i].prodBild+" class='cartProdbild'/>";
+                html += "<div>";
+                html += "<img src="+produkter[i].prodBild+" id='FULLProdbild'/>";
                 html += "</div>";
 
-                html += "<div class='cartCardPrisDiv'>";
+                html += "<div>";
                 html += "<h2 class='cartCardpris'>"+produkter[i].prodPrice+" kr</h2>";
+                html += "</div>";
+
+                html += "<div>";
+                html += "<button class='buy' onclick='addToBasket("+produkter[i].id+")'>Lägg i kundvagn</button>";
+                html += "</div>";
+
+                html += "<div>";
+                html += "<p id='FULLProdDesc'>"+produkter[i].prodDesc+"</p>";
                 html += "</div>";
 
                 html += "</div>";

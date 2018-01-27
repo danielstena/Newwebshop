@@ -208,19 +208,25 @@ body{
 /* --- CSS FÖR STORT PRODUKTKORT START ---- */
 
 #FULLCardDiv{
-    margin-top:20px;
-    margin-bottom:20px;
-    width:400px;
+    margin-top:40px;
+    margin-bottom:40px;
+    width:500px;
     height:80vh;
     background-color: white;
 }
 #FULLCardProdname{
     font-size: 40px;
+    color:black;
 }
-.FULLProdbild{
+#FULLProdbild{
     width:300px;
     height: 300px;
-    margin:20px;
+    margin:10px;
+}
+#FULLProdDesc{
+    color:black;
+    margin:20px 20px 0px 20px;
+    font-size: 20px;
 }
 
 /* --- CSS FÖR KUNDVAGNEN START ---- */
