@@ -6,6 +6,7 @@ var ourUser = "test";
 var ourPassword = "test";
 var totalProductsInCart = 0;
 totalPrice = 0;
+var frakt = 55;
 var ifInlogged = false;
 
 $(document).ready(function(){
@@ -44,6 +45,21 @@ $(document).ready(function(){
 });
 
 //Slut på document ready!!
+
+function inloggad(){
+    $(".main").html("<h1>Welcome Member</h1>");
+    $(".memberlogin").show();
+    $(".headerlogin").hide();
+    ifInlogged = true;
+}
+
+// Visa startsidan
+function visaStart(){
+    $(".undermeny").empty();
+    $(".main").empty();
+    $(".main").append('<img id="mainlogga" src="bilder/sportsnutrition.png"/>')
+    $(".memberlogin").hide();
+}
 
 function visaInfo() {
     $(".main").empty();
@@ -88,36 +104,13 @@ addToBasket = function(val) {
     totalProductsInCart++;
 }
 
-function inloggad(){
-    $(".main").html("<h1>Welcome Member</h1>");
-    $(".memberlogin").show();
-    $(".headerlogin").hide();
-    ifInlogged = true;
-}
-
-// Visa startsidan
-function visaStart(){
-    $(".undermeny").empty();
-    $(".main").empty();
-    $(".main").append('<img id="mainlogga" src="bilder/sportsnutrition.png"/>')
-    $(".memberlogin").hide();
-    
-}
 
 // ------- VARUKORGEN --------------- //
 
 function visaCart() {
-    totalPrice = 55;
-    // ---- Kod för att visa antal varor i varukorgen -- //
-    // -- BÖRJAN -- //
+    totalPrice = 0+frakt;
     $(".cartSummeringAntalOchPris").html("");
 
-    // for (i = 0; i < cartList.length; i++) {
-    //     totalProductsInCart++;
-    // }
-
-    // -- SLUT -- //
-    
     var html = "<div class='cartDiv'>";
     html += '<h1 class="carth1">Kundvagn</h1>';
     html += "<div class='cartSummeringAntalOchPris'></div>";
@@ -187,11 +180,11 @@ function visaProdukter(underID){
             html += "<div class='cardDiv'>";
                 
             html += "<div class='CardprodNameDiv'>";
-            html += "<p class='cardProdname'>"+produkter[i].prodName+"</p>";
+            html += "<a href='#' onclick='showLargeProduct("+produkter[i].id+")'><p class='cardProdname'>"+produkter[i].prodName+"</p></a>";
             html += "</div>";
 
             html += "<div class='cardImageDiv'>";
-            html += "<img src="+produkter[i].prodBild+" class='prodbild'/>";
+            html += "<a href='#' onclick='showLargeProduct("+produkter[i].id+")'><img src="+produkter[i].prodBild+" class='prodbild'/></a>";
             html += "</div>";
 
             html += "<div class='cardprisDiv'>";
@@ -210,8 +203,46 @@ function visaProdukter(underID){
         }
     }
     $(".main").append(html);
- }
-// ----- PRODUKTER SLUT ------//
+}
+                                          // ----- PRODUKTER SLUT ------//
+
+                                 // -----FULL STORLEK PRODUKTER START ------//
+function showLargeProduct(val){
+        $(".main").empty();
+        $(".main").append("<h1>hej</h1>");
+        console.log([val])
+
+    
+        var html = "<div>"
+        for(var i = 0; i < produkter.length; i++){
+            
+            if(val == produkter[i].id) {
+                
+                html = "<div id='FULLCardDiv'>";
+                
+                html += "<div class='cartCardProdNameDiv'>";
+                html += "<p class='cartCardProdname'>"+produkter[i].prodName+"</p>";
+                html += "</div>";
+
+                html += "<div class='cartCardImageDiv'>";
+                html += "<img src="+produkter[i].prodBild+" class='cartProdbild'/>";
+                html += "</div>";
+
+                html += "<div class='cartCardPrisDiv'>";
+                html += "<h2 class='cartCardpris'>"+produkter[i].prodPrice+" kr</h2>";
+                html += "</div>";
+
+                html += "</div>";
+                
+            }
+        }    
+        html += "</div>";
+    
+        $(".main").append(html); 
+}
+
+
+
 
 function visaSubMenu(huvudID) {
     $(".undermeny, .mobilProductsSubmenu").empty();

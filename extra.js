@@ -27,16 +27,20 @@ console.log("looptest") */
 
 // html += "<div class='cartCardsDiv'>";
 
-// for(var i = 0; i < kunder.length; i++) {
+ for(var i = 0; i < kunder.length; i++) {
 
-//     var html = '<div id="kundlistaAdmin"><ul>';
-//     html += '<li>'+ kunder[i].id + '</li>';
-//     html += '<li> '+ kunder[i].email + ' </li>';
-//     html += '<li> '+ kunder[i].password + '</li>';
-//     html += '</ul></div>';
-// }
-// html += "</ul></div>"
-// $(".main").append(html)
+    var html = '<div id="kundlistaAdmin"><ul>';
+        html += '<li>'+ kunder[i].id + '</li>';
+        html += '<li> '+ kunder[i].email + ' </li>';
+        html += '<li> '+ kunder[i].password + '</li>';
+        html += '</ul></div>';
+    }
+    
+    $(".main").append(html)
 
 
-// }
+}
+
+if (ifInlogged == false){
+    html += "<p>Logga in för att slutföra beställningen</p>";
+    }
