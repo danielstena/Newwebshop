@@ -114,7 +114,9 @@ function visaCart() {
     var html = "<div class='cartDiv'>";
     html += '<h1 class="carth1">Kundvagn</h1>';
     html += "<div class='cartSummeringAntalOchPris'></div>";
-    html += "<p>Logga in för att slutföra beställningen</p>";
+    if (ifInlogged == false){
+        html += "<p>Logga in för att slutföra beställningen</p>";
+        }
  
     if (ifInlogged == true){
         html += '<div><button class="clearlist">Slutför beställningen</button></div>';
